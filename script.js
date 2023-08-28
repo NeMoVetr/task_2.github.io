@@ -26,11 +26,11 @@ function SendMessage ()
             {
                 let p = document.createElement ('p');
                 p.textContent = item;
-                text1.appendChild (p);
+                
             });
-       userMessage.value = '';
+      
     }); 
-  
+    userMessage.value = '';
     return 0;
 }
 SendMessage ();
