@@ -26,7 +26,7 @@ function SendMessage ()
             {
                 let p = document.createElement ('p');
                 p.textContent = item;
-                text1.append (p);
+                text1.appendChild (p);
             });
        userMessage.value = '';
     }); 
