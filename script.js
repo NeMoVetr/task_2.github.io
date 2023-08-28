@@ -1,4 +1,4 @@
-function Message ()
+function SendMessage ()
 {
     // Ввод данных
 
@@ -28,8 +28,9 @@ function Message ()
                 p.textContent = item;
                 text1.appendChild (p);
             });
-        
+       userMessage.value='';
     }); 
+  
     return 0;
 }
-Message ();
+SendMessage ();
