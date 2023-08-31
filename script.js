@@ -28,7 +28,7 @@ function SendMessage ()
                 p.textContent = item;
                 text1.appendChild (p);
             });
-            userMessage.value="";
+            
     }); 
     userMessage.value = '';
     return 0;
