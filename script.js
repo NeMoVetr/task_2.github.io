@@ -33,25 +33,4 @@ function SendMessage ()
     userMessage.value = '';
     return 0;
 }
-
-function send() {
-    const message = document.getElementById('user_message').value;
-    (async () => {
-                var response = await fetch('server.php?message=' + message);
-                var answer = await response.text();
-                document.getElementById('message').value = '';
-            }
-        )();
-}
-
-function get ()
-{
-    (async () => {
-        var responce = await fetch('server.php');
-        var answer = await responce.text();
-        document.getElementById('result').innerText = answer;
-    }
-    )();
-}
-get ();
-setInterval (get, 2000);
+SendMessage ();
